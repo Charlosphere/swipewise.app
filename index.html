@@ -103,6 +103,22 @@
     </nav> <!-- end of navbar -->
     <!-- end of navigation -->
 
+    <script>
+        function myFunction() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i)) {
+                alert('ios');
+            }
+            else if (userAgent.match(/Android/i)) {
+                alert('android');
+            }
+            else {
+                alert('desktop');
+            }
+        }
+    </script>
+
 
     <!-- Header -->
     <header class="header">
@@ -111,9 +127,13 @@
                 <div class="col-lg-12">
                     <div class="text-container">
                         <h1>BUY. SELL. TRADE.<br>DISCOVER ETHICAL FASHION.</h1>
-                        <p class="p-large p-heading">Preloved. Vintage. Streetwear. Make a sustainable choice on Swipewise.</p>
-                        <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i class="fab fa-apple"></i>DOWNLOAD</a>
-                        <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i class="fab fa-google-play"></i>DOWNLOAD</a>
+                        <button type="button" onclick="myFunction()">Click me!</button>
+                        <p class="p-large p-heading">Preloved. Vintage. Streetwear. Make a sustainable choice on
+                            Swipewise.</p>
+                        <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i
+                                class="fab fa-apple"></i>DOWNLOAD</a>
+                        <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i
+                                class="fab fa-google-play"></i>DOWNLOAD</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -224,9 +244,9 @@
                 <div class="col-lg-6">
                     <div class="text-container">
                         <h2>What is Swipewise</h2>
-                        <p>At Swipewise, our goal is to help reduce the impact of the fast fashion 
-                            industry on our environnement and the workers. By providing a free and easy to 
-                            use platform, everyone can now make a difference by giving their clothes 
+                        <p>At Swipewise, our goal is to help reduce the impact of the fast fashion
+                            industry on our environnement and the workers. By providing a free and easy to
+                            use platform, everyone can now make a difference by giving their clothes
                             a second life.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
@@ -242,8 +262,7 @@
                                 <div class="media-body">Be the best for our planet</div>
                             </li>
                         </ul>
-                        <a class="btn-solid-reg popup-with-move-anim"
-                            href="#description-1-details-lightbox">MORE</a>
+                        <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox">MORE</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -374,7 +393,7 @@
             <div class="col-lg-4">
                 <h3>The App</h3>
                 <hr>
-                <p>Browse clothes near you with the card-swiping interface. Once you liked an item, you will be 
+                <p>Browse clothes near you with the card-swiping interface. Once you liked an item, you will be
                     connected with the seller.
                 </p>
                 <h4>Features</h4>
@@ -792,10 +811,13 @@
                     <div class="image-container">
                         <img class="img-fluid" src="images/download-iphone.png" alt="alternative">
                     </div> <!-- end of image-container -->
-                    <p class="p-large">We need to work together to reimagine more sustainable fututre for all.<br>Be a part of our journey.
+                    <p class="p-large">We need to work together to reimagine more sustainable fututre for all.<br>Be a
+                        part of our journey.
                     </p>
-                    <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i class="fab fa-apple"></i>DOWNLOAD</a>
-                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i class="fab fa-google-play"></i>DOWNLOAD</a>
+                    <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i
+                            class="fab fa-apple"></i>DOWNLOAD</a>
+                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i
+                            class="fab fa-google-play"></i>DOWNLOAD</a>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -826,7 +848,8 @@
                     <!--<div class="footer-col first">
                         <h5>About Swipewise</h5>
                         <p class="p-small">TODO</p>
-                    </div>--> <!-- end of footer-col -->
+                    </div>-->
+                    <!-- end of footer-col -->
                     <div class="footer-col second">
                         <h5>Contact Info</h5>
                         <ul class="list-unstyled li-space-lg p-small">
@@ -880,7 +903,8 @@
                             </a>
                         </span>-->
                         <span class="fa-stack">
-                            <a href="http://instagram.com/_u/swipewise.app/#Intent;package=com.instagram.android;scheme=https;end">
+                            <a
+                                href="http://instagram.com/_u/swipewise.app/#Intent;package=com.instagram.android;scheme=https;end">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
@@ -898,7 +922,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights reserved</p>
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights
+                        reserved</p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
