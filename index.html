@@ -4,6 +4,17 @@
 <style type="text/css">
 </style>
 
+<script>
+    var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i)) {
+        window.location = "https://apps.apple.com/ca/app/swipewise/id1515354415";
+    }
+    else if (userAgent.match(/Android/i)) {
+        window.location.href = "market://details?id=swipewise.app";
+    }
+</script>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -38,132 +49,116 @@
     <link rel="icon" href="images/favicon.png">
 </head>
 
-<body onload="myFunction()" data-spy="scroll" data-target=".fixed-top">
-
-    <!-- Preloader -->
-    <div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
+<!-- Preloader -->
+<div class="spinner-wrapper">
+    <div class="spinner">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
     </div>
-    <!-- end of preloader -->
+</div>
+<!-- end of preloader -->
 
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-        <div class="container">
-            <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Sync</a> -->
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+        <!-- Text Logo - Use this if you don't have a graphic logo -->
+        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Sync</a> -->
 
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo2.png" alt="alternative"></a>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo2.png" alt="alternative"></a>
 
-            <!-- Mobile Menu Toggle Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-awesome fas fa-bars"></span>
-                <span class="navbar-toggler-awesome fas fa-times"></span>
-            </button>
-            <!-- end of mobile menu toggle button -->
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
 
-            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#description">DESCRIPTION <span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#screens">SCREENS</a>
-                    </li>
-                    <!-- <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#description">DESCRIPTION <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#screens">SCREENS</a>
+                </li>
+                <!-- <li class="nav-item">
                         <a class="nav-link page-scroll" href="#features">FEATURES</a>
                     </li> -->
 
-                    <!-- Dropdown Menu -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
-                            aria-haspopup="true" aria-expanded="false">EXTRA</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <!-- <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button"
+                        aria-haspopup="true" aria-expanded="false">EXTRA</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <!-- <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE
                                     DETAILS</span></a>
                             <div class="dropdown-divider"></div> -->
-                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS
-                                    CONDITIONS</span></a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY
-                                    POLICY</span></a>
-                        </div>
-                    </li>
-                    <!-- end of dropdown menu -->
-                </ul>
-                <span class="nav-item">
-                    <a class="btn-outline-sm page-scroll" href="#download">DOWNLOAD</a>
-                </span>
-            </div>
-        </div> <!-- end of container -->
-    </nav> <!-- end of navbar -->
-    <!-- end of navigation -->
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS
+                                CONDITIONS</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY
+                                POLICY</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+            </ul>
+            <span class="nav-item">
+                <a class="btn-outline-sm page-scroll" href="#download">DOWNLOAD</a>
+            </span>
+        </div>
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- end of navigation -->
 
-    <script>
-        function myFunction() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-            if (userAgent.match(/iPad/i) || userAgent.match(/iPhone/i) || userAgent.match(/iPod/i)) {
-                window.location = "https://apps.apple.com/ca/app/swipewise/id1515354415";
-            }
-            else if (userAgent.match(/Android/i)) {
-                window.location.href = "market://details?id=swipewise.app";
-            }
-        }
-    </script>
-
-
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container">
-                        <h1>BUY. SELL. TRADE.<br>DISCOVER ETHICAL FASHION.</h1>
-                        <p class="p-large p-heading">Preloved. Vintage. Streetwear. Make a sustainable choice on
-                            Swipewise.</p>
-                        <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i
-                                class="fab fa-apple"></i>DOWNLOAD</a>
-                        <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i
-                                class="fab fa-google-play"></i>DOWNLOAD</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-        <div class="deco-white-circle-1">
-            <img src="images/decorative-white-circle.svg" alt="alternative">
-        </div> <!-- end of deco-white-circle-1 -->
-        <div class="deco-white-circle-2">
-            <img src="images/decorative-white-circle.svg" alt="alternative">
-        </div> <!-- end of deco-white-circle-2 -->
-        <div class="deco-blue-circle">
-            <img src="images/decorative-blue-circle.svg" alt="alternative">
-        </div> <!-- end of deco-blue-circle -->
-        <div class="deco-yellow-circle">
-            <img src="images/decorative-yellow-circle.svg" alt="alternative">
-        </div> <!-- end of deco-yellow-circle -->
-        <div class="deco-green-diamond">
-            <img src="images/decorative-green-diamond.svg" alt="alternative">
-        </div> <!-- end of deco-yellow-circle -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="text-container">
+                    <h1>BUY. SELL. TRADE.<br>DISCOVER ETHICAL FASHION.</h1>
+                    <p class="p-large p-heading">Preloved. Vintage. Streetwear. Make a sustainable choice on
+                        Swipewise.</p>
+                    <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i
+                            class="fab fa-apple"></i>DOWNLOAD</a>
+                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i
+                            class="fab fa-google-play"></i>DOWNLOAD</a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <div class="deco-white-circle-1">
+        <img src="images/decorative-white-circle.svg" alt="alternative">
+    </div> <!-- end of deco-white-circle-1 -->
+    <div class="deco-white-circle-2">
+        <img src="images/decorative-white-circle.svg" alt="alternative">
+    </div> <!-- end of deco-white-circle-2 -->
+    <div class="deco-blue-circle">
+        <img src="images/decorative-blue-circle.svg" alt="alternative">
+    </div> <!-- end of deco-blue-circle -->
+    <div class="deco-yellow-circle">
+        <img src="images/decorative-yellow-circle.svg" alt="alternative">
+    </div> <!-- end of deco-yellow-circle -->
+    <div class="deco-green-diamond">
+        <img src="images/decorative-green-diamond.svg" alt="alternative">
+    </div> <!-- end of deco-yellow-circle -->
+</header> <!-- end of header -->
+<!-- end of header -->
 
 
-    <!-- Small Features 
+<!-- Small Features 
     <div class="cards-1">
         <div class="container">
             <div class="row">
@@ -231,97 +226,97 @@
      end of small features -->
 
 
-    <!-- Description 1 -->
-    <div id="description" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/description-1-app.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h2>What is Swipewise</h2>
-                        <p>At Swipewise, our goal is to help reduce the impact of the fast fashion
-                            industry on our environnement and the workers. By providing a free and easy to
-                            use platform, everyone can now make a difference by giving their clothes
-                            a second life.</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Find or sell beautiful clothes near you</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Help us create an ethical and sustainable community</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Be the best for our planet</div>
-                            </li>
-                        </ul>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox">MORE</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of description 1 -->
+<!-- Description 1 -->
+<div id="description" class="basic-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/description-1-app.png" alt="alternative">
+                </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <h2>What is Swipewise</h2>
+                    <p>At Swipewise, our goal is to help reduce the impact of the fast fashion
+                        industry on our environnement and the workers. By providing a free and easy to
+                        use platform, everyone can now make a difference by giving their clothes
+                        a second life.</p>
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Find or sell beautiful clothes near you</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Help us create an ethical and sustainable community</div>
+                        </li>
+                        <li class="media">
+                            <i class="fas fa-square"></i>
+                            <div class="media-body">Be the best for our planet</div>
+                        </li>
+                    </ul>
+                    <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox">MORE</a>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of basic-1 -->
+<!-- end of description 1 -->
 
 
-    <!-- Screenshots -->
-    <div id="screens" class="slider">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+<!-- Screenshots -->
+<div id="screens" class="slider">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
 
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
+                <!-- Image Slider -->
+                <div class="slider-container">
+                    <div class="swiper-container image-slider">
+                        <div class="swiper-wrapper">
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
+                                    <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
+                                </a>
+                            </div>
+                            <!-- end of slide -->
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
+                                    <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
+                                </a>
+                            </div>
+                            <!-- end of slide -->
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
+                                    <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
+                                </a>
+                            </div>
+                            <!-- end of slide -->
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
+                                    <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
+                                </a>
+                            </div>
+                            <!-- end of slide -->
 
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
+                            <!-- Slide -->
+                            <div class="swiper-slide">
+                                <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
+                                    <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
+                                </a>
+                            </div>
+                            <!-- end of slide -->
 
-                                <!-- Slide 
+                            <!-- Slide 
                                 <div class="swiper-slide">
                                     <a href="images/screenshot-1.jpg" class="popup-link" data-effect="fadeIn">
                                         <img class="img-fluid" src="images/screenshot-6.jpg" alt="alternative">
@@ -361,75 +356,75 @@
                                 </div>
                                  end of slide -->
 
-                            </div> <!-- end of swiper-wrapper -->
+                        </div> <!-- end of swiper-wrapper -->
 
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <!-- end of add arrows -->
 
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
+                    </div> <!-- end of swiper-container -->
+                </div> <!-- end of slider-container -->
+                <!-- end of image slider -->
 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider -->
-    <!-- end of screenshots -->
-
-
-    <!-- Description 1 Details Lightbox -->
-    <!-- Details Lightbox -->
-    <div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-            <div class="col-lg-8">
-                <div class="image-container">
-                    <img class="img-fluid" src="images/description-1-details-lightbox.png" alt="alternative">
-                </div> <!-- end of image-container -->
-            </div>
-            <div class="col-lg-4">
-                <h3>The App</h3>
-                <hr>
-                <p>Browse clothes near you with the card-swiping interface. Once you liked an item, you will be
-                    connected with the seller.
-                </p>
-                <h4>Features</h4>
-                <!--<p>TODO</p>-->
-                <ul class="list-unstyled li-space-lg">
-                    <li class="media">
-                        <i class="far fa-check-square"></i>
-                        <div class="media-body">In-app chat</div>
-                    </li>
-                    <li class="media">
-                        <i class="far fa-check-square"></i>
-                        <div class="media-body">Filter by size, gender, location and more</div>
-                    </li>
-                    <li class="media">
-                        <i class="far fa-check-square"></i>
-                        <div class="media-body">Multiple currencies available</div>
-                    </li>
-                    <li class="media">
-                        <i class="far fa-check-square"></i>
-                        <div class="media-body">Selling location screen</div>
-                    </li>
-                    <li class="media">
-                        <i class="far fa-check-square"></i>
-                        <div class="media-body">Easy-to-use interface</div>
-                    </li>
-                </ul>
-                <a class="btn-solid-reg mfp-close page-scroll" href="#download">DOWNLOAD</a> <button
-                    class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
-            </div>
+            </div> <!-- end of col -->
         </div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox -->
-    <!-- end of description 1 details lightbox -->
+    </div> <!-- end of container -->
+</div> <!-- end of slider -->
+<!-- end of screenshots -->
+
+
+<!-- Description 1 Details Lightbox -->
+<!-- Details Lightbox -->
+<div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div class="row">
+        <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+        <div class="col-lg-8">
+            <div class="image-container">
+                <img class="img-fluid" src="images/description-1-details-lightbox.png" alt="alternative">
+            </div> <!-- end of image-container -->
+        </div>
+        <div class="col-lg-4">
+            <h3>The App</h3>
+            <hr>
+            <p>Browse clothes near you with the card-swiping interface. Once you liked an item, you will be
+                connected with the seller.
+            </p>
+            <h4>Features</h4>
+            <!--<p>TODO</p>-->
+            <ul class="list-unstyled li-space-lg">
+                <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">In-app chat</div>
+                </li>
+                <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Filter by size, gender, location and more</div>
+                </li>
+                <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Multiple currencies available</div>
+                </li>
+                <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Selling location screen</div>
+                </li>
+                <li class="media">
+                    <i class="far fa-check-square"></i>
+                    <div class="media-body">Easy-to-use interface</div>
+                </li>
+            </ul>
+            <a class="btn-solid-reg mfp-close page-scroll" href="#download">DOWNLOAD</a> <button
+                class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+        </div>
+    </div> <!-- end of row -->
+</div> <!-- end of lightbox-basic -->
+<!-- end of details lightbox -->
+<!-- end of description 1 details lightbox -->
 
 
 
-    <!-- Description 2 
+<!-- Description 2 
     <div class="tabs">
         <div class="container">
             <div class="row">
@@ -541,7 +536,7 @@
     end of description 2 -->
 
 
-    <!-- Features 
+<!-- Features 
     <div id="features" class="basic-2">
         <div class="container">
             <div class="row">
@@ -635,7 +630,7 @@
      end of features -->
 
 
-    <!-- Testimonials 
+<!-- Testimonials 
     <div class="cards-2">
         <div class="container">
             <div class="row">
@@ -759,7 +754,7 @@
      end of testimonials -->
 
 
-    <!-- Statistics 
+<!-- Statistics 
     <div class="counter">
         <div class="container">
             <div class="row">
@@ -802,88 +797,88 @@
     end of statistics -->
 
 
-    <!-- Download -->
-    <div id="download" class="basic-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/download-iphone.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                    <p class="p-large">We need to work together to reimagine more sustainable fututre for all.<br>Be a
-                        part of our journey.
-                    </p>
-                    <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i
-                            class="fab fa-apple"></i>DOWNLOAD</a>
-                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i
-                            class="fab fa-google-play"></i>DOWNLOAD</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-        <div class="deco-white-circle-1">
-            <img src="images/decorative-white-circle.svg" alt="alternative">
-        </div> <!-- end of deco-white-circle-1 -->
-        <div class="deco-white-circle-2">
-            <img src="images/decorative-white-circle.svg" alt="alternative">
-        </div> <!-- end of deco-white-circle-2 -->
-        <div class="deco-blue-circle">
-            <img src="images/decorative-blue-circle.svg" alt="alternative">
-        </div> <!-- end of deco-blue-circle -->
-        <div class="deco-yellow-circle">
-            <img src="images/decorative-yellow-circle.svg" alt="alternative">
-        </div> <!-- end of deco-yellow-circle -->
-        <div class="deco-green-diamond">
-            <img src="images/decorative-green-diamond.svg" alt="alternative">
-        </div> <!-- end of deco-yellow-circle -->
-    </div> <!-- end of basic-3 -->
-    <!-- end of download -->
+<!-- Download -->
+<div id="download" class="basic-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/download-iphone.png" alt="alternative">
+                </div> <!-- end of image-container -->
+                <p class="p-large">We need to work together to reimagine more sustainable fututre for all.<br>Be a
+                    part of our journey.
+                </p>
+                <a class="btn-solid-lg" href="https://apps.apple.com/ca/app/swipewise/id1515354415"><i
+                        class="fab fa-apple"></i>DOWNLOAD</a>
+                <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=swipewise.app"><i
+                        class="fab fa-google-play"></i>DOWNLOAD</a>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+    <div class="deco-white-circle-1">
+        <img src="images/decorative-white-circle.svg" alt="alternative">
+    </div> <!-- end of deco-white-circle-1 -->
+    <div class="deco-white-circle-2">
+        <img src="images/decorative-white-circle.svg" alt="alternative">
+    </div> <!-- end of deco-white-circle-2 -->
+    <div class="deco-blue-circle">
+        <img src="images/decorative-blue-circle.svg" alt="alternative">
+    </div> <!-- end of deco-blue-circle -->
+    <div class="deco-yellow-circle">
+        <img src="images/decorative-yellow-circle.svg" alt="alternative">
+    </div> <!-- end of deco-yellow-circle -->
+    <div class="deco-green-diamond">
+        <img src="images/decorative-green-diamond.svg" alt="alternative">
+    </div> <!-- end of deco-yellow-circle -->
+</div> <!-- end of basic-3 -->
+<!-- end of download -->
 
 
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!--<div class="footer-col first">
+<!-- Footer -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!--<div class="footer-col first">
                         <h5>About Swipewise</h5>
                         <p class="p-small">TODO</p>
                     </div>-->
-                    <!-- end of footer-col -->
-                    <div class="footer-col second">
-                        <h5>Contact Info</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <!--<li class="media">
+                <!-- end of footer-col -->
+                <div class="footer-col second">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <!--<li class="media">
                                 <i class="fas fa-map-marker-alt"></i>
                                 <div class="media-body">22 Innovation Street, CA, US</div>
                             </li>-->
-                            <li class="media">
-                                <i class="fas fa-envelope"></i>
-                                <div class="media-body">app.swipewise@gmail.com</a></div>
-                            </li>
-                            <!--<li class="media">
+                        <li class="media">
+                            <i class="fas fa-envelope"></i>
+                            <div class="media-body">app.swipewise@gmail.com</a></div>
+                        </li>
+                        <!--<li class="media">
                                 <i class="fas fa-phone-alt"></i>
                                 <div class="media-body"><a href="#your-link">+44 376 945 23</a></div>
                             </li>-->
-                        </ul>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col third">
-                        <h5>Value Links</h5>
-                        <ul class="list-unstyled li-space-lg p-small">
-                            <li><a href="terms-conditions.html">Terms & Conditions</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                            <!-- <li><a href="article-details.html">Article Details</a></li> -->
-                        </ul>
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col fourth">
-                        <!-- <h5>Other Apps</h5>
+                    </ul>
+                </div> <!-- end of footer-col -->
+                <div class="footer-col third">
+                    <h5>Value Links</h5>
+                    <ul class="list-unstyled li-space-lg p-small">
+                        <li><a href="terms-conditions.html">Terms & Conditions</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <!-- <li><a href="article-details.html">Article Details</a></li> -->
+                    </ul>
+                </div> <!-- end of footer-col -->
+                <div class="footer-col fourth">
+                    <!-- <h5>Other Apps</h5>
                         <ul class="list-unstyled li-space-lg p-small">
                             <li><a href="#your-link">Scientific Calculator</a></li>
                             <li><a href="#your-link">Advanced Timer</a></li>
                             <li><a href="#your-link">Music Store</a></li>
                         </ul> -->
-                    </div> <!-- end of footer-col -->
-                    <div class="footer-col fifth">
-                        <!--<span class="fa-stack">
+                </div> <!-- end of footer-col -->
+                <div class="footer-col fifth">
+                    <!--<span class="fa-stack">
                             <a href="#your-link">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
@@ -901,44 +896,44 @@
                                 <i class="fab fa-pinterest-p fa-stack-1x"></i>
                             </a>
                         </span>-->
-                        <span class="fa-stack">
-                            <a
-                                href="http://instagram.com/_u/swipewise.app/#Intent;package=com.instagram.android;scheme=https;end">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> <!-- end of footer-col -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->
-    <!-- end of footer -->
+                    <span class="fa-stack">
+                        <a
+                            href="http://instagram.com/_u/swipewise.app/#Intent;package=com.instagram.android;scheme=https;end">
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div> <!-- end of footer-col -->
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of footer -->
+<!-- end of footer -->
 
 
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights
-                        reserved</p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright -->
-    <!-- end of copyright -->
+<!-- Copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Inovatik</a> - All rights
+                    reserved</p>
+            </div> <!-- end of col -->
+        </div> <!-- enf of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of copyright -->
+<!-- end of copyright -->
 
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+<!-- Scripts -->
+<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+<script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+<script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+<script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>
